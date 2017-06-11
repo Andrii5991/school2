@@ -1,0 +1,69 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=cyrillic');
+// Bootstrap
+//@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+//$
+$font: 'Open Sans', sans-serif;
+
+// styles
+@import "app/variables";
+@import "app/nav";
+@import "app/content";
+
+$borderRadius: 10px;
+
+.btn-save{
+  background-color: #2ab27b;
+  color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: $borderRadius;
+  &:hover{
+    background-color: #21835b;
+    color: #fff;
+  }
+}
+.btn-create{
+  background-color: #0080ff;
+  color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: $borderRadius;
+  &:hover{
+    background-color: #0057a4;
+    color: #fff;
+  }
+}
+.btn-edit{
+  background-color: #0080ff;
+  color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: $borderRadius;
+  &:hover{
+    background-color: #0057a4;
+    color: #fff;
+  }
+}
+.btn-show{
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #e5e5e5;
+  border-radius: $borderRadius;
+  &:hover{
+    background-color: #cccccc;
+    color: #fff;
+  }
+}
+.btn-trash{
+  background-color: #f0506e;
+  color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: $borderRadius;
+  &:hover{
+    background-color: #a4364c;
+    color: #fff;
+  }
+}
+
+.img-fix-size{max-height: 60px;}
+.item-table-border{border-top: 1px solid #e5e5e5; padding: 10px 0 0 0; margin-left: 7px;}
+.item-table-border-title{margin-left: 7px;}
