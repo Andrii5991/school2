@@ -110,13 +110,13 @@
                                     <div class="uk-card uk-card-default uk-padding uk-card-hover uk-margin sortable"
                                          id="advantage">
                                         <input hidden name="welcome_sort[]" value="advantage">
-                                        Премущества
+                                        Викладачі
                                     </div>
                                 @elseif($settings['review'] == $q)
                                     <div class="uk-card uk-card-default uk-padding uk-card-hover uk-margin sortable"
                                          id="review">
                                         <input hidden name="welcome_sort[]" value="review">
-                                        Отзиви
+                                        Відгуки
                                     </div>
                                 @endif
                             @endfor
@@ -129,12 +129,12 @@
                             <div class="uk-card uk-card-default uk-padding uk-card-hover uk-margin sortable"
                                  id="advantage">
                                 <input hidden name="welcome_sort[]" value="advantage">
-                                Премущества
+                                Викладачі
                             </div>
                             <div class="uk-card uk-card-default uk-padding uk-card-hover uk-margin sortable"
                                  id="review">
                                 <input hidden name="welcome_sort[]" value="review">
-                                Отзиви
+                                Відгуки
                             </div>
                         @endif
                         {{--@if(count($w_s) > 0)

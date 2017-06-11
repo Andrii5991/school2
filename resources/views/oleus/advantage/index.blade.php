@@ -4,7 +4,7 @@
 
     <div class="uk-container">
 
-        <h1>Преимущества</h1>
+        <h1>Викладачі</h1>
         <div class="uk-card uk-card-default uk-width-1-1@m">
             <div class="uk-card-header uk-text-right">
                 <a href="{{ route('advantage.create') }}" class="uk-button btn-create">Створити</a>
@@ -15,9 +15,9 @@
                 <div class="item-table-border-title" uk-grid>
                     <div class="uk-width-1-6">#id</div>
                     <div class="uk-width-1-6">Заголовок</div>
-                    <div class="uk-width-1-6">Изображение</div>
-                    <div class="uk-width-1-6">Подзаголовок</div>
-                    <div class="uk-width-1-6">Сортировка</div>
+                    <div class="uk-width-1-6">Зображення</div>
+                    <div class="uk-width-1-6">Підзаголовок</div>
+                    <div class="uk-width-1-6">Сортування</div>
                 </div>
 
 
@@ -70,7 +70,7 @@
                     @empty
                         <div class="uk-alert-danger" uk-alert>
                             <a class="uk-alert-close" uk-close></a>
-                            <p>У вас немає переваг</p>
+                            <p>Відсутні записи</p>
                         </div>
                     @endforelse
 

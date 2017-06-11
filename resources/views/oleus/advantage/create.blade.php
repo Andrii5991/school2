@@ -10,7 +10,7 @@
                 <div class="uk-margin pull-left">
                     <label class="uk-form-label" for="status">
                         <input class="uk-checkbox checkbox_status" type="checkbox" name="status"
-                               value="1">Опубликовано
+                               value="1">Опубліковано
                     </label>
                 </div>
                 <input class="uk-button btn-save pull-right" type="submit" value='СТВОРИТИ'>

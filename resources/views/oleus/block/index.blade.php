@@ -3,7 +3,7 @@
 @section('content')
     <div class="uk-container">
 
-        <h1>БЛОКИ</h1>
+        <h1>Новини</h1>
 
         <div class="uk-card uk-card-default uk-width-1-1@m">
             <div class="uk-card-header uk-text-right">
@@ -58,7 +58,7 @@
                         @empty
                             <div class="uk-alert-danger" uk-alert>
                                 <a class="uk-alert-close" uk-close></a>
-                                <p>У вас немає Блоків</p>
+                                <p>У вас немає новин</p>
                             </div>
                         @endforelse
                 </div>

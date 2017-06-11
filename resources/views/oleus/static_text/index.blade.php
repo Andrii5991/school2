@@ -26,11 +26,12 @@
                             <div class="item-table-border" uk-grid>
                                 <div class="uk-width-1-6">{{ $num+1 }}</div>
                                 <div class="uk-width-1-6">{{ strip_tags($text->title) }}</div>
-                                <div class="uk-width-1-3 text-bacground-img" {{--id="text-{{ $text->id }}--}}">
+                                <div class="uk-width-1-3 text-bacground-img" {{--id="text-{{ $text->id }}--}}>
                                 @if(isset($text->image))
                                     <img src="/storage/files/{{ App\Files::find($text->image)->filename }}"
                                          class="advantages-scheme" style="max-width: 80px; max-height: 80px;">
-                                @endif</div>
+                                @endif
+                                </div>
                             <div class="uk-width-1-6"># {{ $text->id }}</div>
                             <div class="uk-width-1-6">
                                 <a href="{{ route('text.edit', $text) }}"

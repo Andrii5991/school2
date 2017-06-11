@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="uk-container uk-margin">
-        <h3 class="uk-text-center uk-text-danger"> Редагувати "БЛОК": {!! $block->title !!} </h3>
+        <h3 class="uk-text-center uk-text-danger"> Редагувати "Новини": {!! $block->title !!} </h3>
         <div class="uk-card uk-card-default">
             <form class="uk-form-stacked" method="post" id="type_form" action="{{ route('block.update', $block) }}" enctype="multipart/form-data">
                 {{ csrf_field() }}
@@ -11,7 +11,7 @@
                     <label class="uk-form-label uk-margin-right" for="status">
                         <input class="uk-checkbox checkbox_status" type="checkbox" name="status" value="1"
                                @if($block->status) checked @endif >
-                        Опубликовано
+                        Опубліковано
                     </label>
                 </div>
                 <input class="uk-button btn-save pull-right" type="submit" value="Змінити">

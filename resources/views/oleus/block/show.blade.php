@@ -4,14 +4,14 @@
     <div class="uk-container">
         <div class="uk-card uk-card-default">
             <div class="uk-card-header">
-                <h3 class="uk-card-title uk-text-center uk-text-danger">БЛОК {!! $block->title !!}</h3>
+                <h3 class="uk-card-title uk-text-center uk-text-danger">Новини {!! $block->title !!}</h3>
             </div>
             <div class="uk-card-body">
                 <dl class="uk-description-list uk-description-list-divider">
                     {{--@if(isset($cookie))
                         <dd>{{ $cookie }}</dd>
                     @endif--}}
-                    <dt>Тип блока:</dt>
+                    <dt>Тип Новини:</dt>
                     <dd>{{ $bundle }}</dd>
 
                     <dt>Підзаголовок:</dt>

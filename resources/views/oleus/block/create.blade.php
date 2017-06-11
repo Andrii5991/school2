@@ -3,7 +3,7 @@
 @section('content')
     <div class="uk-container uk-margin">
 
-        <h3 class="uk-text-center uk-text-danger"> Створити "Блок" </h3>
+        <h3 class="uk-text-center uk-text-danger"> Створити "Новини" </h3>
 
         <div class="uk-card uk-card-default">
             <form method="post" id="type_form" action="{{ route('block.store') }}" enctype="multipart/form-data">
@@ -33,7 +33,7 @@
                     </div>
 
                     <div class="uk-margin">
-                        <label class="uk-form-label" for="sort">Тип блока: </label>
+                        <label class="uk-form-label" for="sort">Тип Новини: </label>
                         <div class="uk-form-controls">
                             <select id="bundle" name="bundle" class="uk-select">
                                 @foreach(config('config.bundle') as $val => $name)
