@@ -2,23 +2,23 @@
 
 @section('content')
     <div class="uk-container">
-        <h3 class="uk-text-center uk-text-danger">Создать Отзыв</h3>
+        <h3 class="uk-text-center uk-text-danger">Створити відгук</h3>
         <div class="uk-card uk-card-default">
             <form method="post" id="type_form" class="uk-form-horizontal uk-margin-large"
                   action="{{ route('review.store') }}" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <div class="uk-card-header">
                     <div class="uk-margin pull-left">
-                        <label for="status">Опубликовано</label>
+                        <label for="status">Опубліковано</label>
                         <input class="uk-checkbox checkbox_status" type="checkbox" name="status"
                                value="1">
                     </div>
-                    <button class="uk-button btn-create uk-margin pull-right" type="submit">Создать</button>
+                    <button class="uk-button btn-create uk-margin pull-right" type="submit">Створити</button>
                 </div>
                 <div class="uk-card-body">
                     <div class="uk-margin">
                         <label class="uk-form-label" for="form-horizontal-text">Имя*
-                            @if(Session::has('t'))<label style="color: red"> это поле обезательно</label>
+                            @if(Session::has('t'))<label style="color: red"> це поле обов'язкове</label>
                             @endif</label>
                         <div class="uk-form-controls">
                             <input class="uk-input" id="name" name="name" type="text" placeholder="Имя"
@@ -35,8 +35,8 @@
                     </div>
 
                     <div class="uk-margin">
-                        <label class="uk-form-label" for="form-horizontal-text">Содержимое*
-                            @if(Session::has('b'))<label style="color: red"> это поле обезательно</label>
+                        <label class="uk-form-label" for="form-horizontal-text">Вміст*
+                            @if(Session::has('b'))<label style="color: red"> це поле обов'язкове</label>
                             @endif</label>
                         <div class="uk-form-controls">
                             <textarea class="uk-textarea htmleditor" id="body" name="body" rows="5"
@@ -45,7 +45,7 @@
                     </div>
 
                     <div class="uk-margin">
-                        <label class="uk-form-label" for="image">Изображение </label>
+                        <label class="uk-form-label" for="image">Зображення </label>
                         <div class="uk-form-file">
                             <button class="uk-button"></button>
                             <input type="file" name="image" id="image" accept="image/*">
@@ -67,7 +67,7 @@
                         </div>
                     </div>
                     <div class="uk-margin">
-                        <label class="uk-form-label" for="sort">Сортировка: </label>
+                        <label class="uk-form-label" for="sort">Сортування: </label>
                         <div class="uk-form-controls">
                             <input class="uk-input" type="number" name="sort" id="sort" min="0" value="0">
                         </div>
@@ -75,14 +75,14 @@
                 </div>
                 <div class="uk-card-footer">
                     <div class="uk-margin">
-                        <label class="uk-form-label" for="form-horizontal-text">Дополнительные данные</label>
+                        <label class="uk-form-label" for="form-horizontal-text">Додаткові дані</label>
                         <div class="uk-form-controls">
                             <div id="divResult" class="add_url uk-grid" style="padding-top: 30px;">
 
                             </div>
                             <div class="uk-width-1-1 uk-padding-remove">
                                 <a class="uk-button uk-button-default uk-button-small btn_add_url" id="add_url">
-                                    Добавить url </i>
+                                    Добавити url </i>
                                 </a>
                             </div>
                         </div>

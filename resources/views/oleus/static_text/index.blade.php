@@ -3,19 +3,19 @@
 @section('content')
     <div class="uk-container">
 
-        <h1>Статический текст</h1>
+        <h1>Статичний текст</h1>
 
         <div class="uk-card uk-card-default uk-width-1-1@m">
             <div class="uk-card-header uk-text-right">
-                <a class="uk-button btn-create" href="{{ route('text.create') }}">Создать</a>
-                <button class="uk-button btn-save" id="sort_btn" type="submit" value='SAVE'>Сохранить</button>
+                <a class="uk-button btn-create" href="{{ route('text.create') }}">Створити</a>
+                <button class="uk-button btn-save" id="sort_btn" type="submit" value='SAVE'>Зберегти</button>
             </div>
             <div class="uk-card-body">
 
                 <div class="item-table-border-title" uk-grid>
                     <div class="uk-width-1-6">№</div>
                     <div class="uk-width-1-6">Заголовок</div>
-                    <div class="uk-width-1-3">Изображение</div>
+                    <div class="uk-width-1-3">Зображення</div>
                     <div class="uk-width-1-6">ID</div>
                     <div class="uk-width-1-6"></div>
                 </div>

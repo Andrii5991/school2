@@ -2,24 +2,24 @@
 
 @section('content')
     <div class="uk-container uk-margin">
-        <h3 class="uk-text-center uk-text-danger">Редактирование отзыва {{ $review->name }}</h3>
+        <h3 class="uk-text-center uk-text-danger">Редагування відгуку {{ $review->name }}</h3>
         <div class="uk-card uk-card-default">
             <form class="uk-form-horizontal uk-margin-large" method="post" id="type_form"
                   action="{{ route('review.update', $review) }}" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <div class="uk-card-header">
                     <div class="uk-margin pull-left">
-                        <label class="uk-form-label" for="status">Опубликовано</label>
+                        <label class="uk-form-label" for="status">Опубліковано</label>
                         <input class="uk-checkbox checkbox_status" type="checkbox" name="status"
                                @if($review->status) checked @endif
                                value="1">
                     </div>
-                    <button class="uk-button btn-save uk-margin pull-right">Сохранить изменения</button>
+                    <button class="uk-button btn-save uk-margin pull-right">Зберегти зміни</button>
                 </div>
                 <div class="uk-card-body">
                     <div class="uk-margin">
                         <label class="uk-form-label" for="form-horizontal-text">Имя*
-                            @if(Session::has('t'))<label style="color: red"> это поле обезательно</label>
+                            @if(Session::has('t'))<label style="color: red"> це поле обов'язкове</label>
                             @endif</label>
                         <div class="uk-form-controls">
                             <input class="uk-input" id="name" name="name" type="text" value="{{ $review->name}}">
@@ -35,8 +35,8 @@
                     </div>
 
                     <div class="uk-margin">
-                        <label class="uk-form-label" for="form-horizontal-text">Содержимое*
-                            @if(Session::has('b'))<label style="color: red"> это поле обезательно</label>
+                        <label class="uk-form-label" for="form-horizontal-text">Вміст*
+                            @if(Session::has('b'))<label style="color: red"> це поле обов'язкове</label>
                             @endif</label>
                         <div class="uk-form-controls">
                             <textarea class="uk-textarea htmleditor" id="body" name="body"
@@ -45,7 +45,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="image">Изображение: </label>
+                        <label for="image">Зображення: </label>
                         @if(isset($image))
                             <img src="/storage/files/{{ $image->filename }}">
                         @endif
@@ -70,7 +70,7 @@
                         </div>
                     </div>
                     <div class="uk-margin">
-                        <label class="uk-form-label" for="sort">Сортировка: </label>
+                        <label class="uk-form-label" for="sort">Сортування: </label>
                         <div class="uk-form-controls">
                             <input class="uk-input" type="number" name="sort" id="sort" min="0" value="0">
                         </div>
@@ -78,7 +78,7 @@
                 </div>
                 <div class="uk-card-footer">
                     <div class="uk-margin">
-                        <label class="uk-form-label" for="form-horizontal-text">Дополнительные данные</label>
+                        <label class="uk-form-label" for="form-horizontal-text">Додаткові дані</label>
 
 
                         <div class="uk-form-controls uk-grid">

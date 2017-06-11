@@ -3,17 +3,17 @@
 
 @section('content')
     <div class="uk-container">
-        <h3 class="uk-card-title">Создание меню</h3>
+        <h3 class="uk-card-title">Створення меню</h3>
         <div class="uk-card uk-card-default">
             <form method="post" id="type_form" action="{{ route('menu.store') }}">
                 {{ csrf_field() }}
             <div class="uk-card-header">
-                <button class="uk-button btn-save uk-margin-top pull-right" type="submit">Сохранить</button>
+                <button class="uk-button btn-save uk-margin-top pull-right" type="submit">Зберегти</button>
             </div>
             <div class="uk-card-body">
                 <div class="uk-margin">
                     <label class="uk-form-label">Заголовок*
-                        @if(Session::has('t'))<label style="color: red"> это поле обезательно</label>
+                        @if(Session::has('t'))<label style="color: red"> це поле обов'язкове</label>
                         @endif</label>
                     <div class="uk-form-controls">
                         <input id="title" name="title"  type="text" class="uk-input" placeholder="Title" value="{{ old('title') }}">
@@ -22,16 +22,16 @@
 
                 <div class="uk-margin">
                     <label class="uk-form-label">Блок*
-                        @if(Session::has('b'))<label style="color: red"> это поле обезательно</label>
+                        @if(Session::has('b'))<label style="color: red"> це поле обов'язкове</label>
                         @endif</label>
                     <div class="uk-form-controls">
                         <select id="block" name="block" class="uk-select">
                             <option value="error">
-                                @if($blocks->active()->count() > 0) Виберите блок
-                                @else У Вас нет активних блоков @endif
+                                @if($blocks->active()->count() > 0) Виберіть блок
+                                @else У Вас немає активних блоків @endif
                             </option>
-                            <option value="-1">Преимущества</option>
-                            <option value="-2">Отзывы</option>
+                            <option value="-1">Переваги</option>
+                            <option value="-2">Відгуки</option>
                             @foreach($blocks->active()->get() as $block)
                                 @if($block->bundle == 'static_text' || $block->bundle == 'blocks')
                                     <option value="{{ $block->id }}">{!! $block->title !!}</option>
@@ -42,14 +42,14 @@
                 </div>
                 <div class="uk-margin" id="div-class">
                     <label class="uk-form-label">Метка*
-                        @if(Session::has('m'))<label style="color: red"> это поле обезательно</label>
+                        @if(Session::has('m'))<label style="color: red"> це поле обов'язкове</label>
                         @endif</label>
                     <div class="uk-form-controls">
                         <input id="class" name="class" type="text" class="uk-input" placeholder="class для пункта меню" value="{{ old('class') }}">
                     </div>
                 </div>
                 <div class="uk-margin">
-                    <label class="uk-form-label">Опубликовано на сайте:</label>
+                    <label class="uk-form-label">Опубліковано на сайті:</label>
                     <input class="uk-checkbox checkbox_status" type="checkbox" name="status"
                            value="1">
                 </div>

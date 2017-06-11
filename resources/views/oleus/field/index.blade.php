@@ -7,7 +7,7 @@
 
         <div class="uk-card uk-card-default uk-width-1-1@m">
             <div class="uk-card-header uk-text-right">
-                <a href="{{ route('field.create') }}" class="uk-button btn-create">Создать</a>
+                <a href="{{ route('field.create') }}" class="uk-button btn-create">Створити</a>
             </div>
             <div class="uk-card-body">
 
@@ -46,7 +46,7 @@
                     @empty
                         <div class="uk-alert-danger" uk-alert>
                             <a class="uk-alert-close" uk-close></a>
-                            <p>У вас нет Полей</p>
+                            <p>У вас немає полів</p>
                         </div>
                     @endforelse
 

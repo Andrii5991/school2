@@ -2,10 +2,10 @@
 
 @section('content')
     <div class="uk-container">
-        <h1>Формы</h1>
+        <h1>Форми</h1>
         <div class="uk-card uk-card-default uk-width-1-1@m">
             <div class="uk-card-header uk-text-right">
-                <a class="uk-button btn-create" href="{{ route('form.create') }}">Создать</a>
+                <a class="uk-button btn-create" href="{{ route('form.create') }}">Створити</a>
             </div>
             <div class="uk-card-body">
 
@@ -20,11 +20,11 @@
                     </div>
 
                     <div class="uk-width-expand@m">
-                        <div>Подзаголовок</div>
+                        <div>Підзаголовок</div>
                     </div>
 
                     <div class="uk-width-expand@m">
-                        <div>Ел.почта</div>
+                        <div>Ел.пошта</div>
                     </div>
 
                     <div class="uk-width-1-6@m">
@@ -70,7 +70,7 @@
                     @empty
                         <div class="uk-alert-danger" uk-alert>
                             <a class="uk-alert-close" uk-close></a>
-                            <p>У вас нет Форм</p>
+                            <p>У вас немає Форм</p>
                         </div>
                     @endforelse
                 </div>

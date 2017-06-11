@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="uk-container">
-        <h3 class="uk-text-center uk-text-danger">Настройки</h3>
+        <h3 class="uk-text-center uk-text-danger">Налаштування</h3>
         <div class="uk-card uk-card-default">
             <form class="uk-form-stacked" method="POST" id="type_form" action="{{ route('setting.update') }}">
                 {{ csrf_field() }}
@@ -25,19 +25,19 @@
                         </div>
 
                         <div class="uk-margin">
-                            <label class="uk-form-label uk-margin-right">Благодарственный текст</label>
+                            <label class="uk-form-label uk-margin-right">Подяка</label>
                             <div class="uk-form-controls">
                                 <input name="message" type="text" value="{{ $settings['message'] or old('message') }}"
                                        class="uk-input uk-margin-bottom">
                             </div>
                         </div>
                         <div class="uk-margin">
-                            <label class="uk-form-label uk-margin-right" for="call_back">Выбор форми обратной связи</label>
+                            <label class="uk-form-label uk-margin-right" for="call_back">Вибір форми зворотнього звязку</label>
                             <div class="uk-form-controls">
                                 <select class="uk-select" name="call_back" id="call_back">
                                     @if(isset($call_back))<option value="{{ $call_back->id }}" selected>{!! $call_back->title !!}</option>
-                                @elseif(count($forms) == 0)<option value="null">У вас нет созданых форм</option>
-                                    @else <option value="null">Виберите форму</option>  @endif
+                                @elseif(count($forms) == 0)<option value="null">У вас немає створених форм</option>
+                                    @else <option value="null">Виберіть форму</option>  @endif
 
                                     @forelse($forms as $form)
                                         <option value="{{ $form->id }}">{!! $form->title !!}</option>
@@ -64,7 +64,7 @@
                             </div>
                         </div>
                         <div class="uk-margin">
-                            <label class="uk-form-label uk-margin-right" for="title">Выбор заголовка</label>
+                            <label class="uk-form-label uk-margin-right" for="title">Вибір заголовка</label>
                             <div class="uk-form-controls">
                                 <select class="uk-select" name="title">
                                     <option value="error">Без заголовка</option>
@@ -78,7 +78,7 @@
                         </div>
 
                         <div class="uk-margin">
-                            <label class="uk-form-label uk-margin-right">Оптимизация конверсий</label>
+                            <label class="uk-form-label uk-margin-right">Оптимізація конверсій</label>
                             <div class="uk-form-controls">
                                 <select name="conversion" class="uk-select" id="form-horizontal-select">
                                     <option value="3-0-0"

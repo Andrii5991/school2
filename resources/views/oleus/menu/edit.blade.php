@@ -3,18 +3,18 @@
 
 @section('content')
 <div class="uk-container">
-    <h3 class="uk-card-title">Создание меню  {{ $menu->title }}</h3>
+    <h3 class="uk-card-title">Створення меню  {{ $menu->title }}</h3>
     <div class="uk-card uk-card-default">
         <form method="post" id="type_form" action="{{ route('menu.update', $menu) }}">
             {{ csrf_field() }}
         <div class="uk-card-header">
-            <button class="uk-button btn-save uk-margin-top pull-right" type="submit">Сохранить</button>
+            <button class="uk-button btn-save uk-margin-top pull-right" type="submit">Зберегти</button>
 
         </div>
         <div class="uk-card-body">
             <div class="uk-margin">
                 <label class="uk-form-label">Заголовок*
-                    @if(Session::has('t'))<label style="color: red"> это поле обезательно</label>
+                    @if(Session::has('t'))<label style="color: red"> це поле обов'язкове</label>
                     @endif</label>
                 <div class="uk-form-controls">
                     <input id="title" name="title" type="text" class="uk-input" value="{{ $menu->title}}">
@@ -24,8 +24,8 @@
                 <label class="uk-form-label">Блок</label>
                 <div class="uk-form-controls">
                     <select id="block" name="block" class="uk-select">
-                        <option value="-1" @if($menu->block == -1) selected @endif>Преимущества</option>
-                        <option value="-2" @if($menu->block == -2) selected @endif>Отзывы</option>
+                        <option value="-1" @if($menu->block == -1) selected @endif>Переваги</option>
+                        <option value="-2" @if($menu->block == -2) selected @endif>Відгуки</option>
                         @if(!is_null($block))
                             <option value="{{ $block->id }}">{!!  $block->title !!}@endif</option>
                         @foreach($blocks->active()->get() as $block)
@@ -37,15 +37,15 @@
                 </div>
             </div>
             <div class="uk-margin" id="div-class">
-                <label class="uk-form-label">Метка*
-                    @if(Session::has('m'))<label style="color: red"> это поле обезательно</label>
+                <label class="uk-form-label">Мітка*
+                    @if(Session::has('m'))<label style="color: red"> це поле обов'язкове</label>
                     @endif</label>
                 <div class="uk-form-controls">
                     <input id="class" name="class" type="text" class="uk-input" value="{{ $menu->class}}">
                 </div>
             </div>
             <div class="uk-margin">
-                <label class="uk-form-label uk-margin-right">Опубликовано на сайте</label>
+                <label class="uk-form-label uk-margin-right">Опубліковано на сайті</label>
                 <input class="uk-checkbox checkbox_status" type="checkbox" name="status"
                        @if($menu->status) checked @endif value="1">
             </div>

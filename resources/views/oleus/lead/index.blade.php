@@ -3,7 +3,7 @@
 @section('content')
     <div class="uk-container">
 
-        <h1>Лиды</h1>
+        <h1>Ліди</h1>
 
         <div class="uk-card uk-card-default uk-width-1-1@m">
             <div class="uk-card-header uk-text-right">
@@ -13,8 +13,8 @@
 
                 <div class="item-table-border-title" uk-grid>
                     <div class="uk-width-1-6@m">ID</div>
-                    <div class="uk-width-expand@m">Дание</div>
-                    <div class="uk-width-2-6@m">Название форми</div>
+                    <div class="uk-width-expand@m">Дані</div>
+                    <div class="uk-width-2-6@m">Назва форми</div>
                 </div>
 
                 @forelse($leads as $lead)

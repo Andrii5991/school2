@@ -3,19 +3,19 @@
 @section('content')
     <div class="uk-container">
 
-        <h1>Создание меню</h1>
+        <h1>Створення меню</h1>
 
         <div class="uk-card uk-card-default uk-width-1-1@m">
             <div class="uk-card-header uk-text-right">
-                <a class="uk-button btn-create" href="{{ route('menu.create') }}">Создать</a>
-                <button class="uk-button btn-save" id="sort_btn" type="submit" value='SAVE'>Сохранить</button>
+                <a class="uk-button btn-create" href="{{ route('menu.create') }}">Створити</a>
+                <button class="uk-button btn-save" id="sort_btn" type="submit" value='SAVE'>Зберегти</button>
             </div>
             <div class="uk-card-body">
 
                 <div class="item-table-border-title uk-child-width-1-6@m" uk-grid>
                     <div>№</div>
                     <div>Заголовок</div>
-                    <div>Метка</div>
+                    <div>Мітка</div>
                     <div>Статус</div>
                     <div>#id</div>
                     <div></div>
@@ -61,7 +61,7 @@
                     @empty
                         <div class="uk-alert-danger" uk-alert>
                             <a class="uk-alert-close" uk-close></a>
-                            <p>У вас нет Меню</p>
+                            <p>У вас немає Меню</p>
                         </div>
                     @endforelse
                 </div>

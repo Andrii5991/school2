@@ -28,17 +28,17 @@
         <ul class="uk-nav uk-nav-parent-icon uk-margin-left" style="clear: both;" data-uk-nav>
             <li><a href="{{ url('/oleus') }}"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
             <li><a href="{{ url('/oleus/block') }}"><i class="fa fa-check" aria-hidden="true"></i> Блоки</a></li>
-            <li><a href="{{ url('/oleus/advantage') }}"><i class="fa fa-check" aria-hidden="true"></i> Преимущества</a></li>
-            <li><a href="{{ url('/oleus/lead') }}"><i class="fa fa-check" aria-hidden="true"></i> Лиды</a></li>
+            <li><a href="{{ url('/oleus/advantage') }}"><i class="fa fa-check" aria-hidden="true"></i> Переваги</a></li>
+            <li><a href="{{ url('/oleus/lead') }}"><i class="fa fa-check" aria-hidden="true"></i> Ліди</a></li>
             <li><a href="{{ url('/oleus/statistic') }}"><i class="fa fa-check" aria-hidden="true"></i> Статистика</a></li>
-            <li><a href="{{ url('/oleus/form') }}"><i class="fa fa-check" aria-hidden="true"></i> Формы</a></li>
+            <li><a href="{{ url('/oleus/form') }}"><i class="fa fa-check" aria-hidden="true"></i> Форми</a></li>
             <li><a href="{{ url('/oleus/field') }}"><i class="fa fa-check" aria-hidden="true"></i> Поля</a></li>
-            <li><a href="{{ url('/oleus/text') }}"><i class="fa fa-check" aria-hidden="true"></i> Статический текст</a></li>
+            <li><a href="{{ url('/oleus/text') }}"><i class="fa fa-check" aria-hidden="true"></i> Статичний текст</a></li>
             <li><a href="{{ url('/oleus/menu') }}"><i class="fa fa-bars" aria-hidden="true"></i> Меню</a></li>
-            <li><a href="{{ url('/oleus/contact') }}"><i class="fa fa-phone" aria-hidden="true"></i> Контакты</a></li>
+            <li><a href="{{ url('/oleus/contact') }}"><i class="fa fa-phone" aria-hidden="true"></i> Контакти</a></li>
             <li><a href="{{ url('/oleus/title') }}"><i class="fa fa-circle" aria-hidden="true"></i> Заголовки</a></li>
-            <li><a href="{{ url('/oleus/review') }}"><i class="fa fa-comments" aria-hidden="true"></i> Отзывы</a></li>
-            <li><a href="{{ url('/oleus/setting') }}"><i class="fa fa-cog" aria-hidden="true"></i> Настройки</a></li>
+            <li><a href="{{ url('/oleus/review') }}"><i class="fa fa-comments" aria-hidden="true"></i> Відгуки</a></li>
+            <li><a href="{{ url('/oleus/setting') }}"><i class="fa fa-cog" aria-hidden="true"></i> Налаштування</a></li>
             <li><a href="{{ route('logout') }}"
                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                     <i class="fa fa-sign-out" aria-hidden="true"></i>

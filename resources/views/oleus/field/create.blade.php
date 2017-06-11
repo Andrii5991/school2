@@ -12,7 +12,7 @@
                 <div class="uk-card-body">
                     <div class="uk-margin">
                         <label class="uk-form-label uk-margin-right" for="title">Заголовок*
-                            @if(Session::has('notify'))<label style="color: red"> это поле обезательно</label>
+                            @if(Session::has('notify'))<label style="color: red"> це поле обов'язкове</label>
                             @endif</label>
                         <div class="uk-form-controls">
                             <input type="text" id="title" name="title" class="uk-input" placeholder="title"
@@ -32,7 +32,7 @@
                     </div>
 
                     <div class="uk-margin">
-                        <label class="uk-form-label uk-margin-right" for="title">Настройки</label>
+                        <label class="uk-form-label uk-margin-right" for="title">Налаштування</label>
                         <div class="uk-form-controls">
                             <input type="text" id="settings" name="settings" class="uk-input" placeholder="settings"
                                    value="{{ old('settings') }}">
@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="uk-margin">
-                        <label class="uk-form-label uk-margin-right" for="title">Маска формы</label>
+                        <label class="uk-form-label uk-margin-right" for="title">Маска форми</label>
                         <div class="uk-form-controls">
                             <input type="text" id="mask" name="mask" class="uk-input" placeholder="mask"
                                    value="{{ old('mask') }}">
@@ -50,7 +50,7 @@
                     <div class="uk-margin">
                         <label class="uk-form-label" for="status">
                             <input class="uk-checkbox checkbox_status" type="checkbox" name="required"
-                                   value="1"> Обезятельное поле
+                                   value="1"> поле обов'язкове
                         </label>
                     </div>
                 </div>

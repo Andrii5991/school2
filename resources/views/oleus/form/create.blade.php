@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="uk-container">
-        <h3 class="uk-text-center uk-text-danger">Новая форма</h3>
+        <h3 class="uk-text-center uk-text-danger">Нова форма</h3>
         <div class="uk-card uk-card-default">
             <form method="post" id="type_form" action="{{ route('form.store') }}">
                 {{ csrf_field() }}
@@ -10,7 +10,7 @@
                 <div class="uk-margin pull-left">
                     <label class="uk-form-label" for="status">
                         <input class="uk-checkbox checkbox_status" type="checkbox" name="status"
-                               value="1">Опубликовано
+                               value="1">Опубліковано
                     </label>
                 </div>
                 <input type="submit" class="uk-button btn-save pull-right" value="Сохранить">
@@ -19,7 +19,7 @@
 
                 <div class="uk-margin">
                     <label class="uk-form-label uk-margin-right" for="title">Заголовок*
-                        @if(Session::has('notify'))<label style="color: red"> это поле обезательно</label>
+                        @if(Session::has('notify'))<label style="color: red"> поле обов'язкове</label>
                         @endif
                     </label>
                     <div class="uk-form-controls">
@@ -33,7 +33,7 @@
                 </div>
 
                 <div class="uk-margin">
-                    <label class="uk-form-label uk-margin-right" for="sub_title">Подзаголовок</label>
+                    <label class="uk-form-label uk-margin-right" for="sub_title">Підзаголовок</label>
                     <div class="uk-form-controls">
                         <textarea id="sub_title" name="sub_title"  type="text" class="uk-textarea htmleditor"
                                   placeholder="Подзаголовок">{{ old('sub_title') }}</textarea>
@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="uk-margin">
-                    <label class="uk-form-label uk-margin-right" for="button">Надпись на кнопке</label>
+                    <label class="uk-form-label uk-margin-right" for="button">Надпис на кнопці</label>
                     <div class="uk-form-controls">
                         <input type="text" id="button" name="button"
                                class="uk-input uk-margin-bottom"
@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <div class="uk-margin">
-                    <label class="uk-form-label uk-margin-right" for="title">Цель Google.Analytics</label>
+                    <label class="uk-form-label uk-margin-right" for="title">Ціль Google.Analytics</label>
                     <div class="uk-form-controls">
                         <input type="text" id="" name="" class="uk-input uk-margin-bottom"
                                placeholder="">
@@ -70,7 +70,7 @@
                 </div>
 
                 <div class="uk-margin">
-                    <label class="uk-form-label uk-margin-right" for="title">Цель Яндекс.Метрики</label>
+                    <label class="uk-form-label uk-margin-right" for="title">Ціль Яндекс.Метрики</label>
                     <div class="uk-form-controls">
                         <input type="text" id="" name="" class="uk-input uk-margin-bottom"
                                placeholder="">
@@ -80,8 +80,8 @@
                     <label class="uk-form-label uk-margin-right">Шаблон</label>
                     <div class="uk-form-controls">
                         <select class="uk-select uk-form-width-large" name="show_template">
-                            <option value="0">По горизонтали</option>
-                            <option value="1">По вертикали</option>
+                            <option value="0">По горизонталі</option>
+                            <option value="1">По вертикалі</option>
                         </select>
                     </div>
                 </div>
@@ -89,20 +89,20 @@
                 <div class="uk-margin">
                     <label class="uk-form-label" for="show_title">
                         <input class="uk-checkbox checkbox_status" type="checkbox" name="show_title" id="show_title"
-                               value="1">Показывать заголовок
+                               value="1">Показати заголовок
                     </label>
                 </div>
 
 
             </div>
             <div class="uk-card-footer">
-                <label class="uk-form-label">Конструктор полей</label>
+                <label class="uk-form-label">Конструктор полів</label>
                 <div id="divResult" class="uk-margin add_field">
 
                 </div>
 
                 <a class="uk-button btn-create uk-margin-bottom pull-left btn_add_field" id="add_field">
-                    Добавить поле <i class="fa fa-plus-square"></i>
+                    Добавити поле <i class="fa fa-plus-square"></i>
                 </a>
             </div>
             </form>

@@ -7,15 +7,15 @@
 
         <div class="uk-card uk-card-default uk-width-1-1@m">
             <div class="uk-card-header uk-text-right">
-                <a class="uk-button btn-create" href="{{ route('review.create') }}">Создать</a>
-                <button class="uk-button btn-save" id="sort_btn" type="submit" value='SAVE'>Сохранить</button>
+                <a class="uk-button btn-create" href="{{ route('review.create') }}">Створити</a>
+                <button class="uk-button btn-save" id="sort_btn" type="submit" value='SAVE'>Зберегти</button>
             </div>
             <div class="uk-card-body">
 
 
                 <div class="item-table-border-title" uk-grid>
                     <div class="uk-width-1-6@m">#id</div>
-                    <div class="uk-width-expand@m">Имя</div>
+                    <div class="uk-width-expand@m">Імя</div>
                     <div class="uk-width-expand@m">Заголовок</div>
                     {{--<div class="uk-width-expand@m">Текст</div>--}}
                     <div class="uk-width-1-6@m"></div>
@@ -62,7 +62,7 @@
                     @empty
                         <div class="uk-alert-danger" uk-alert>
                             <a class="uk-alert-close" uk-close></a>
-                            <p>У вас нет Отзывов</p>
+                            <p>У вас немає відгуків</p>
                         </div>
                     @endforelse
 
