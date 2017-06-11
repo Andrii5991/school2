@@ -76,7 +76,7 @@ sdfg
             <div class="uk-container">
                 @if(isset($titleObj) && $titleObj != null)
                     <div class="container" @if(isset($titleObj->image))
-                    style="background-image: url(/storage1/files/{{ App\Files::find($titleObj->image)->filename  }})"
+                    style="background-image: url(/storage/files/{{ App\Files::find($titleObj->image)->filename  }})"
                             @endif>
                         @include("$titleObj->templates")
                     </div>
@@ -90,7 +90,7 @@ sdfg
 
                 <div class="uk-container bacground"
                         @if(isset($text->background))
-                        style="background-image: url(/storage1/files/{{ App\Files::find($text->background)->filename }})"
+                        style="background-image: url(/storage/files/{{ App\Files::find($text->background)->filename }})"
                         @endif>
                     <p>{!! $text->title !!}</p>
                     <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>

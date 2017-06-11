@@ -13,7 +13,7 @@
                     <div class="uk-card-body adwantages">
                         @if(isset( App\Files::find($advantage->image)->filename))
                             <div class="parent" style="
-                                    background: url(/storage1/files/{{ App\Files::find($advantage->image)->filename }}) center center no-repeat;
+                                    background: url(/storage/files/{{ App\Files::find($advantage->image)->filename }}) center center no-repeat;
                                     background-size: contain;
                                     ">
                             </div>

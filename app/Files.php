@@ -54,12 +54,12 @@ class Files extends Model
     public function get($id = null)
     {
         if (is_null($id)) {
-//            return response()->download(public_path("storage1/files/{$this->filename}"));
+//            return response()->download(public_path("storage/files/{$this->filename}"));
             return Storage::disk('public')->url("files/{$this->filename}");
         }
 
         $file = $this->find($id);
-//            return response()->download(public_path("storage1/files/{$file->filename}"));
+//            return response()->download(public_path("storage/files/{$file->filename}"));
         return Storage::disk('public')->url("files/{$file->filename}");
     }
 

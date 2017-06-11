@@ -3,7 +3,7 @@
     <div class="uk-container"  @if(isset($text->class)) id="{{ $text->class }}" @endif
     @if(isset($text->background))
     style="
-            background: url(/storage1/files/{{ App\Files::find($text->background)->filename  }}) center center no-repeat;
+            background: url(/storage/files/{{ App\Files::find($text->background)->filename  }}) center center no-repeat;
             background-size: cover;
             "
             @endif>
@@ -11,7 +11,7 @@
              uk-grid>
             <div class="uk-padding-small">
                 @if(isset(App\Files::find($text->image)->filename))
-                <div class="uk-cover-container uk-height-medium" style="background: url(/storage1/files/{{ App\Files::find($text->image)->filename }}) center center no-repeat;
+                <div class="uk-cover-container uk-height-medium" style="background: url(/storage/files/{{ App\Files::find($text->image)->filename }}) center center no-repeat;
                         background-size: contain;">
                 </div>
                 @endif

@@ -44,7 +44,7 @@
     @if(isset($titleObj) && $titleObj != null)
         <div class="container" @if(isset($titleObj->image))
         style="
-                background: url(/storage1/files/{{ App\Files::find($titleObj->image)->filename  }}) center center no-repeat;
+                background: url(/storage/files/{{ App\Files::find($titleObj->image)->filename  }}) center center no-repeat;
                 background-size: cover;
                 "
                 @endif>
