@@ -62,7 +62,7 @@
 
 {{--#text-{{ $text->id }}  {--}}
 {{--@if(!is_null($text->image))--}}
-{{--background-image: url(/storage/files/{{ App\Files::find($text->image)->filename }});--}}
+{{--background-image: url(/storage1/files/{{ App\Files::find($text->image)->filename }});--}}
 {{--@endif--}}
 {{--}--}}
 {{--@endforeach--}}

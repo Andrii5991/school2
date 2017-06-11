@@ -189,7 +189,7 @@
 
     {{--<div class="uk-width-1-6">--}}
     {{--@if(!is_null($advantage->image))--}}
-    {{--<img src="/storage/files/{{ App\Files::find($advantage->image)->filename }}">--}}
+    {{--<img src="/storage1/files/{{ App\Files::find($advantage->image)->filename }}">--}}
     {{--@endif--}}
     {{--</div>--}}
 

@@ -3,7 +3,7 @@
     <div class="uk-container" @if(isset($text->class)) id="{{ $text->class }}" @endif
          @if(isset($text->background))
          style="
-                 background: url(/storage/files/{{ App\Files::find($text->background)->filename  }}) center center no-repeat;
+                 background: url(/storage1/files/{{ App\Files::find($text->background)->filename  }}) center center no-repeat;
                  background-size: cover;
                  "
             @endif>

@@ -11,7 +11,7 @@
             <div class="uk-padding-small">
                 @if(isset(App\Files::find($text->image)->filename))
                     <div class="uk-cover-container uk-height-medium"
-                         style="background: url(/storage/files/{{ App\Files::find($text->background)->filename  }}) center center no-repeat;
+                         style="background: url(/storage1/files/{{ App\Files::find($text->background)->filename  }}) center center no-repeat;
                                  background-size: contain;">
                     </div>
                 @endif
@@ -19,7 +19,7 @@
             <div class="uk-padding-small">
                 @if(isset(App\Files::find($text->image)->filename))
                     <div class="uk-cover-container uk-height-medium"
-                         style="background: url(/storage/files/{{ App\Files::find($text->image)->filename }}) center center no-repeat;
+                         style="background: url(/storage1/files/{{ App\Files::find($text->image)->filename }}) center center no-repeat;
                                  background-size: contain;">
                     </div>
                 @endif

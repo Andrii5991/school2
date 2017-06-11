@@ -17,7 +17,7 @@
                                 <div class="uk-width-auto">
                                     @if(isset( App\Files::find($review->image)->filename))
                                         <div class="uk-comment-avatar"
-                                             style="background: url(/storage/files/{{ App\Files::find($review->image)->filename }}) center center no-repeat;
+                                             style="background: url(/storage1/files/{{ App\Files::find($review->image)->filename }}) center center no-repeat;
                                                      background-size: contain;"></div>
                                     @endif
                                 </div>
